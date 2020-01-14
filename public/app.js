@@ -1,5 +1,5 @@
 // Establish a Socket.io connection
-const socket = io();
+const socket = io('https://feathers-socket-test.herokuapp.com/');
 // Initialize our Feathers client application through Socket.io
 // with hooks and authentication.
 const client = feathers();
