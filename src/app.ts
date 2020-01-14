@@ -25,7 +25,7 @@ const generatorSpecs = require('../feathers-gen-specs.json');
 // !code: imports // !end
 // !code: init // !end
 
-const app = express(feathers());
+const app: any = express(feathers());
 // !code: use_start // !end
 
 // Load app configuration
@@ -84,7 +84,7 @@ app.configure(
 );
 
 // Configure other middleware (see `middleware/index.ts`)
-app.configure(middleware);
+// app.configure(middleware);
 // Set up our services (see `services/index.ts`)
 app.configure(services);
 // Set up event channels (see channels.ts)
