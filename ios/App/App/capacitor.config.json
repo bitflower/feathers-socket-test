@@ -1,0 +1,8 @@
+{
+  "appId": "net.bitflower.sockettest",
+  "appName": "feathers-socket-test",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "public",
+  "cordova": {}
+}
