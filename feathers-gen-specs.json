@@ -18,6 +18,24 @@
       "socketio"
     ]
   },
-  "services": {},
-  "hooks": {}
+  "services": {
+    "atoms": {
+      "name": "atoms",
+      "nameSingular": "atom",
+      "subFolder": "",
+      "fileName": "atoms",
+      "adapter": "nedb",
+      "path": "/atoms",
+      "isAuthEntity": false,
+      "graphql": false
+    }
+  },
+  "hooks": {},
+  "connections": {
+    "nedb": {
+      "database": "nedb",
+      "adapter": "nedb",
+      "connectionString": "nedb://../data"
+    }
+  }
 }

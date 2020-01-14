@@ -1,6 +1,7 @@
 
 // Application interface. (Can be re-generated.)
 import { Application } from '@feathersjs/express';
+import { Atom } from './services/atoms/atoms.interface';
 // !code: imports // !end
 // !code: init // !end
 
@@ -17,6 +18,7 @@ import { Application } from '@feathersjs/express';
   });
  */
 export type App = Application<{
+  'atoms': Atom,
   // !code: moduleExports // !end
 }>;
 // !code: funcs // !end
