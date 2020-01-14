@@ -1,6 +1,6 @@
 import { App } from './app.interface';
 
-export default function (app: App) {
+export default function(app: App) {
   if (typeof app.channel !== 'function') {
     // If no real-time functionality has been configured just return
     return;
@@ -44,10 +44,12 @@ export default function (app: App) {
     // To publish only for a specific event use `app.publish(eventname, () => {})`
 
     // tslint:disable-next-line
-    console.log('Publishing all events to all authenticated users. See `channels.ts` and https://docs.feathersjs.com/api/channels.html for more information.');
+    console.log(
+      'Publishing all events to all authenticated users. See `channels.ts` and https://docs.feathersjs.com/api/channels.html for more information.'
+    );
 
     // e.g. to publish all service events to all authenticated users use
-    return app.channel('authenticated');
+    return app.channel('anonymous', 'authenticated');
   });
 
   // Here you can also add service specific event publishers
